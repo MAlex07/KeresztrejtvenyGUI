@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:KeresztrejtvenyGUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="370">
+	
 	<Canvas x:Name="Rejtveny">
 		<Label Content="Keresztrejvény mérete [sorok x oszlopok]: " Canvas.Left="5" Canvas.Top="14"/>
-		<Button x:Name="btn_letrehoz" Content="Keresztrejtvény létrehozása" Canvas.Left="10" Canvas.Top="56"/>
+		<Button x:Name="btn_letrehoz" Content="Keresztrejtvény létrehozása" Canvas.Left="10" Canvas.Top="56" Click="btn_letrehoz_Click"/>
 		<Button x:Name="btn_mentes" Content="Keresztrejvény mentése" Canvas.Left="165" Canvas.Top="56"/>
 		<ComboBox x:Name="cb_sorokszama" Canvas.Left="240" Canvas.Top="14"/>
 		<ComboBox x:Name="cb_oszlopokszama" Canvas.Left="280" Canvas.Top="14"/>
