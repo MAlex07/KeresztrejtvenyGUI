@@ -19,6 +19,23 @@ namespace KeresztrejtvenyGUI
         public MainWindow()
         {
             InitializeComponent();
-        }
+
+            for(int i = 6; i<=15; i++)
+            {
+                cb_sorokszama.Items.Add(i);
+                cb_oszlopokszama.Items.Add(i);
+			}
+
+            for (int i = 1; i<=10; i++)
+            {
+                cb_index.Items.Add(i);
+			}
+
+            cb_oszlopokszama.SelectedItem = 15;
+            cb_sorokszama.SelectedItem = 15;
+            cb_index.SelectedItem = 3;
+
+
+		}
     }
 }
